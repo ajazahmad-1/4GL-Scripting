@@ -1,0 +1,8 @@
+10: edit data
+     move "parm/input/personId" to $personID;
+     move "parm/input/NewCity" to $UpdatedCityName;
+     move "$personID"  to "C1-Person/personId";
+     invokeBO 'C1-Person' using "C1-Person" for read;
+     move "$UpdatedCityName" to "C1-Person/city";
+     invokeBO 'C1-Person' using "C1-Person" for update;
+end-edit;
