@@ -1,0 +1,6 @@
+edit data
+     move "parm/hard/newBusinessObject/financialInfo/adjustmentType" to "XXX_ADTYPE_V/adjustmentType";
+     invokeSS 'XXX_ADTYPE_V' using "XXX_ADTYPE_V";
+     move "parm/hard/newBusinessObject/financialInfo/ taxableAdjustmentType" to "XXX_ADTYPE_V/adjustmentType";
+     invokeSS 'XXX_ADTYPE_V' using "XXX_ADTYPE_V";
+end-edit;
