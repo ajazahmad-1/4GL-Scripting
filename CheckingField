@@ -1,0 +1,9 @@
+// if both search fields are blank, throw an error
+if ("string(parm/name) = $BLANK and string(parm/socialSecurity) = $BLANK")
+   terminate with error (90000, 400XX);
+end-if;
+//
+// if both search fields are populated, throw an error
+if ("string(parm/name) != $BLANK and string(parm/socialSecurity) != $BLANK")
+   terminate with error (90000, 401XX);
+end-if;
