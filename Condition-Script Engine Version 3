@@ -1,0 +1,7 @@
+edit data
+     if ("parm/approvalRequest/approvalInfo/currentApprovalToDoId = $BLANK")
+          terminate with error (11112, 80201);
+     else
+          move "parm/approvalRequest/approvalInfo/currentApprovalToDoId" to "maintainToDoEntry/toDoEntryId";
+     end-if;
+end-edit;
