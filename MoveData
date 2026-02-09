@@ -1,3 +1,4 @@
+//Move the data from one path to other
 edit data
      move "parm/hard/newBusinessObject/financialInfo/adjustmentType" to "XXX_ADTYPE_V/adjustmentType";
      invokeSS 'XXX_ADTYPE_V' using "XXX_ADTYPE_V";
