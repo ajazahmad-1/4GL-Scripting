@@ -3,7 +3,7 @@ edit data
      move "parm/hard/businessObjectKey/conservationProgram" to "C2M-ConservationProgram/conservationProgram";
      invokeBO 'C2M-ConservationProgram' using "C2M-ConservationProgram" for read;
      
-     // Check that the start date is not in the future
+     // Check the start date is not in the future
      if ("xs:date(C2M-ConservationProgram/generalInfo/startDate) > xs:date($CURRENT-DATE)")
          terminate with error (90000, 30000 element='generalInfo/startDate');
      end-if;
